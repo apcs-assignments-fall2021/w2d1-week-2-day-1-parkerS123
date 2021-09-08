@@ -2,14 +2,31 @@ public class MyMain {
     // Takes two Strings as input, and returns a String equal to the first half
     // of the shorter String plus the second half of the longer String.
     public static String halfAdder(String str1, String str2) {
-        // REPLACE THIS WITH YOUR CODE
+        int x1 = str1.length();
+        int x11 = x1/2;
+        int x2 = str2.length();
+        int x22 = x2/2;
+
+        if (x1 < x2) {
+            System.out.println(str1.substring(0, x11) + str2.substring(x22));
+        }
+        else {
+            System.out.print(str2.substring(0,x22) + str1.substring(x11));
+        }
         return "";
     }
 
     // Takes a String as input, and returns true if the String contains an 'A' or 'a'
     // and returns false otherwise
     public static boolean checkIfA(String str) {
-        // REPLACE THIS WITH YOUR CODE
+        int check = str.indexOf("a");
+        if check > 0 {
+            return true;
+        }
+        else {
+            return false;
+        }
+
         return false;
     }
 
